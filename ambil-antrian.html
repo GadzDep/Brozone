@@ -10,9 +10,7 @@
       rel="stylesheet"
     />
 
-    <?php
-
-    ?>
+    <?php ?>
 
     <style>
       * {
@@ -24,6 +22,12 @@
 
       body {
         background: #eef1f7;
+
+        background-image: url("asset/pattern1.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
       }
 
       /* SIDEBAR */
@@ -58,13 +62,23 @@
       .menu li {
         display: flex;
         align-items: center;
+        border: 3px solid #3f6184;
         gap: 12px;
         background: #3f6184;
+
         margin: 18px 30px;
         padding: 12px;
         border-radius: 10px;
         font-weight: 500;
         cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      .menu li:hover {
+        transform: translateY(-10px);
+        box-shadow: 0px 14px 37px 0px rgba(0, 0, 0, 0.49);
+        border: 3px solid #eef1f7;
+        animation: ease-in;
       }
 
       .menu li img {
@@ -172,16 +186,17 @@
 
       .button-area {
         display: flex;
-        justify-content: center;
+        justify-content: right;
         margin-top: 25px;
         gap: 30px;
+        padding-right: 30px;
       }
 
       .btn {
         background: #2e333a;
         color: white;
         border: none;
-        padding: 16px 45px;
+        padding: 16px 115px;
         font-size: 16px;
         border-radius: 10px;
         display: flex;
