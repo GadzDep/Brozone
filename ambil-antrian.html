@@ -80,6 +80,9 @@
         border: 3px solid #eef1f7;
         animation: ease-in;
       }
+      .menu span li {
+        border: 3px solid #eef1f7;
+      }
 
       .menu li img {
         width: 20px;
@@ -203,10 +206,24 @@
         align-items: center;
         gap: 10px;
         cursor: pointer;
+
+        transition: all 0.4s cubic-bezier(0.3, 0.8, 0.3, 2.3);
       }
 
       .btn img {
         width: 18px;
+      }
+
+      .icon {
+        position: a;
+        color: white;
+      }
+
+      .btn:hover {
+        padding: 16px 160px;
+        background: #4a6a8c;
+        color: white;
+        gap: 0px;
       }
     </style>
   </head>
@@ -221,11 +238,9 @@
 
       <div class="menu">
         <ul>
-          <li>
-            <img src="asset/ktp.svg" />
-            Ambil Antrian
-          </li>
-
+          <span>
+            <li><img src="asset/ktp.svg" /> Ambil Antrian</li>
+          </span>
           <li>
             <img src="asset/people.svg" />
             Daftar Antrian
@@ -277,7 +292,7 @@
         </div>
 
         <div class="button-area">
-          <img src="asset/submit.svg" />
+          <img class="icon" src="asset/submit.svg" />
           <button class="btn">Ambil Antrean</button>
         </div>
       </div>
