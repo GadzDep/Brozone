@@ -234,38 +234,5 @@
 
       <img src="asset/scissor.svg" />
     </div>
-
-    <!-- MAIN -->
-
-    <div class="main">
-      <div>
-        <div class="card">
-          <div class="card-img">
-            <img src="asset/asset1.png" />
-          </div>
-
-          <div class="card-form">
-            <h2>
-              <img src="asset/plus.svg" />
-              Ambil Antrean
-            </h2>
-
-            <input type="text" placeholder="08XXXXXXXXXX" />
-
-            <select>
-              <option>Tanggal</option>
-              <option>10 Maret 2026</option>
-              <option>11 Maret 2026</option>
-              <option>12 Maret 2026</option>
-            </select>
-          </div>
-        </div>
-
-        <div class="button-area">
-          <img src="asset/submit.svg" />
-          <button class="btn">Ambil Antrean</button>
-        </div>
-      </div>
-    </div>
   </body>
 </html>
