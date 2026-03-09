@@ -25,7 +25,7 @@
 
           <li><img src="asset/ktp.svg" alt="">Ambil Antrian</li>
           <li>Kartu Antrian</li>
-          <li>YOYOKS KASNURS HELAMBANGS</li>
+          <li>YOYOKS KASNURS HELAMBANGS PUJS</li>
           
         </ul>
       </div>
