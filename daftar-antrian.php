@@ -234,5 +234,13 @@
 
       <img src="asset/scissor.svg" />
     </div>
+
+      <!-- MAIN -->
+       <div class="main">
+        <div class="card">
+
+        </div>
+       </div>
+    </div>
   </body>
 </html>
