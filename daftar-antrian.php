@@ -65,6 +65,7 @@
         border-radius: 10px;
         font-weight: 500;
         cursor: pointer;
+        text-align: center;
       }
 
       .menu li img {
