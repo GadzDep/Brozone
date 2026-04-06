@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brozone Barbershop</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <?php ?>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+
+      body {
+        background: #eef1f7;
+
+        background-image: url("asset/pattern1.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+      }
+
+      /* SIDEBAR */
+
+      .sidebar {
+        width: 270px;
+        height: 100vh;
+        background: #323a45;
+        position: fixed;
+        left: 0;
+        top: 0;
+        color: white;
+      }
+
+      .logo {
+        text-align: center;
+        padding-top: 35px;
+      }
+
+      .logo img {
+        width: 120px;
+      }
+
+      .menu {
+        margin-top: 40px;
+      }
+
+      .menu ul {
+        list-style: none;
+      }
+
+      .menu li {
+        display: flex;
+        align-items: center;
+        border: 3px solid #3f6184;
+        gap: 12px;
+        background: #3f6184;
+
+        margin: 18px 30px;
+        padding: 12px;
+        border-radius: 10px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      .menu li:hover {
+        transform: translateY(-10px);
+        box-shadow: 0px 14px 37px 0px rgba(0, 0, 0, 0.49);
+        border: 3px solid #eef1f7;
+        animation: ease-in;
+      }
+
+      .menu li img {
+        width: 20px;
+      }
+
+      /* HEADER */
+
+      .header {
+        position: fixed;
+        left: 270px;
+        top: 0;
+        width: calc(100% - 270px);
+        height: 150px;
+        background: #3f6184;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 70px;
+        color: white;
+      }
+
+      .header h1 {
+        letter-spacing: 16px;
+        font-weight: 700;
+      }
+
+      .header span {
+        font-size: 24px;
+        letter-spacing: 6px;
+      }
+
+      .header img {
+        width: 50zpx;
+      }
+
+      /* MAIN */
+
+      .main {
+        margin-left: 390px;
+        padding-top: 200px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+      }
+
+      /* CARD */
+
+      .card {
+        display: flex;
+        align-items: center;
+        background: #ffffff;
+        border-radius: 39px;
+        box-shadow: 0px 3px 43px 6px rgba(0, 28, 89, 0.2);
+        padding-right: 30px;
+        width: 1027px;
+        height: 395px;
+      }
+
+      /* ILUSTRASI */
+
+      .card-img {
+        background: #ffffff;
+        padding-left: 30px;
+        border-radius: 20px 100px 100px 20px;
+      }
+
+      .card-img img {
+        width: 573px;
+      }
+
+      .judulantrian {
+        display: flex;
+        align-items: center;
+        text-align: start;
+        gap: 6px;
+      }
+
+      .judulantrian h1 {
+        display: flex;
+        color: #3f6184;
+        font-size: 40px;
+        text-align: center;
+        align-items: center;
+        font-weight: 600;
+      }
+
+      .judulantrian img {
+        height: 56px;
+        width: 56px;
+        margin-right: 10px;
+      }
+
+      .card-tulisan {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .saatini {
+        height: 49px;
+        width: 365px;
+        border-radius: 32px;
+        background-color: #3f6184;
+        text-align: start;
+        gap: 10px;
+        padding-left: 30px;
+        display: flex;
+      }
+
+      .saatini span {
+        color: #ffffff;
+        font-weight: 500;
+        align-items: center;
+        text-align: center;
+        font-size: 20px;
+        display: flex;
+      }
+
+      .quotes {
+        display: flex;
+        padding-top: 20px;
+      }
+
+      .quotes p {
+        color: #3f6184;
+        font-weight: 400;
+        font-size: 19px;
+        padding-left: 10px;
+        padding-right: 30px;
+      }
+
+      /* DAFTAR */
+      .card-daftar {
+        width: 1027px;
+        height: 214px;
+        background-color: #3f6184;
+        display: flex;
+        border-radius: 20px;
+        margin-bottom: 20px;
+        margin-top: 66px;
+        justify-content: space-between;
+      }
+
+      .judul-antrian {
+        font-weight: 600;
+        font-size: 37px;
+        color: #ffffff;
+        padding-left: 30px;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+                padding: 30px;
+
+      }
+
+      .tanggal {
+        background-color: #f2f2f2;
+        border-radius: 9px;
+        font-size: 13px;
+        font-weight: 700;
+        color: #394e64;
+        display: inline-flex;
+        height: 43px;
+        width: 551px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        padding-left: 30px;
+        margin-top: 10px;
+        justify-content: center;
+      }
+
+      .tanggal p {
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        gap: 10px;
+        font-size: 13px;
+        align-items: center;
+      }
+
+      .tanggal img {
+        height: 22px;
+        width: 22px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+      }
+
+      .tanggal span {
+        color: #6f7786;
+        font-weight: 400;
+        padding-left: 30px;
+        font-size: 17px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .nomor-antrian {
+        background-color: #ffffff;
+        width: 300px;
+        height: 214px;
+        border-radius: 100px 20px 20px 100px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        font-size: 70px;
+        font-weight: bold;
+        color: #4b6b8b;
+        flex-direction: row-reverse;
+      }
+
+      .nomor-antrian span{
+        padding-left: 50px;
+      }
+
+      /* BUTTON */
+
+      .button-area {
+        display: flex;
+        justify-content: right;
+        margin-top: 25px;
+        gap: 30px;
+        padding-right: 30px;
+      }
+
+      .btn {
+        background: #2e333a;
+        color: white;
+        border: none;
+        padding: 16px 115px;
+        font-size: 16px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        cursor: pointer;
+      }
+
+      .btn img {
+        width: 18px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- SIDEBAR -->
+
+    <div class="sidebar">
+      <div class="logo">
+        <img src="asset/logo.svg" />
+      </div>
+
+      <div class="menu">
+        <ul>
+          <li>
+            <img src="asset/ktp.svg" />
+            Ambil Antrian
+          </li>
+
+          <li>
+            <img src="asset/people.svg" />
+            Daftar Antrian
+          </li>
+
+          <li>
+            <img src="asset/ktp.svg" />
+            Kartu Antrian
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- HEADER -->
+
+    <div class="header">
+      <div>
+        <h1>BROZONE</h1>
+        <span>BARBERSHOP</span>
+      </div>
+
+      <img src="asset/scissor.svg" />
+    </div>
+
+    <!-- MAIN -->
+    <div class="main">
+      <div class="card">
+        <div class="card-img">
+          <img src="asset/antri.png" alt="" />
+        </div>
+        <div class="card-tulisan">
+          <div class="judulantrian">
+            <h1><img src="asset/peoplebiru.png" alt="" />Daftar Antrian</h1>
+          </div>
+          <div class="saatini">
+            <span>Saat Ini</span>
+          </div>
+          <div class="quotes">
+            <p>Antri bukan menunda, tapi menghargai sesama.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- DAFTAR -->
+      <div class="card-daftar">
+        <div class="judul-antrian">
+          <span>Nomor Antrean</span>
+
+          <div class="tanggal">
+            <p><img src="asset/calendar.png" alt="" />27-01-2026</p>
+            <span>|</span>
+            <span>Antrian berlaku untuk hari ini saja</span>
+          </div>
+        </div>
+
+        <div class="nomor-antrian">
+          <span>001</span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
